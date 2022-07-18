@@ -5,6 +5,7 @@ module.exports = {
   // Then we return the results as JSON, and catch any errors. Errors are sent as JSON with a message and a 500 status code
   getPosts(req, res) {
     Post.find()
+      .sort({ createdAt: 'desc' })
       .then((posts) => res.json(posts))
       .catch((err) => res.status(500).json(err));
   },

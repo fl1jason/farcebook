@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farcebook</title>
+    <link href='https://fonts.googleapis.com/css?family=Open Sans' rel='stylesheet'>
+    <link rel="stylesheet" href="./assets/style.css">
+    <link rel="icon" type="image/x-icon" href="/assets/icons/windows.png">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js" defer></script>
+    <script src="./assets/home.js"></script>
+</head>
+
+<body>
+
+    <header>
+        <div class="logo w25">
+            farcebook
+        </div>
+        <div class="searchbar w50">
+            <input type="text" id="search" placeholder="Search farcebook">
+        </div>
+        <div class="account w25">
+            <div class="account-info">
+                <img src="https://i.pravatar.cc/50?u=samjas" alt="" class="avatar">
+                <div class="account-info-text">
+                    <h3>Tia Maria</h3>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+
+        <div class="friends w25">
+            <div class="friend-list box">
+                <div class="friend-list-header">
+                    <h3>Friends</h3>
+                </div>
+                <div id="friends-list">
+
+                </div>
+                <div class="friends-list-options">
+                    <input type="button" value="More Friends" id="more-friends" class="more-friends">
+                </div>
+            </div>
+        </div>
+        <div class="posts w50">
+            <div class="new-post box">
+                <img src="https://i.pravatar.cc/50?u=samjas" alt="" class="avatar">
+                <input type="text" placeholder="What's on your mind?" id="new-post-text">
+            </div>
+            <div class="friends-posts" id="friends-posts">
+            </div>
+        </div>
+        <div class="right-bar w25">
+            <div class="profile box">
+                <div class="profile-header">
+                    <h3>Profile</h3>
+                </div>
+                <div class="profile-card">
+                    <h1>@samjas</h1>
+                    <p><a href="#">31 Friends</a></p>
+                    <p><a href="#">12 Posts</a></p>
+                    <p><a href="#">Online</a></p>
+                </div>
+            </div>
+            <div class="quick-actions box">
+                <a href="#" onclick="loadMyPosts(10);">My Posts</a>
+                <a href="#">My Account</a>
+                <a href="#">Security</a>
+                <a href="#">Logout</a>
+            </div>
+            <div class="ads box">
+                <div class="banner">
+
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-links">
+            <a href="#">My Posts</a>
+            <a href="#">My Account</a>
+            <a href="#">Security</a>
+            <a href="#">Logout</a>
+        </div>
+        <div class="copyright">
+            Copyright @fl1jason 2022&copy;
+        </div>
+    </footer>
+
+</body>
+
+</html>
