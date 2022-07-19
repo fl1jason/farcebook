@@ -172,7 +172,10 @@ const onNewPost = async (e) => {
             body: JSON.stringify(post)
         });
         const data = await res.json();
-        console.log(data);
+
+        // clear the search field
+        document.getElementById('new-post-text').value = '';
+
         loadMyPosts(-1);
     }
 }
